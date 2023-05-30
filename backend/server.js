@@ -1,10 +1,16 @@
 const app = require("./app");
-const connectDatabase = require("./db/Database");
 
   require("dotenv").config()
 
-// connect db
-connectDatabase();
+const mongoose = require("mongoose");
+
+const connectDatabase = () => {
+  mongoose
+    .connect(process.env.DB_UR)
+    .then((data) => {
+      console.log(`mongod connected with server: ${data.connection.host}`);
+    });
+};
 
 // create server
 const server = app.listen(process.env.PORT, () => {
