@@ -1,3 +1,4 @@
+  require("dotenv").config()
 const express = require("express");
 const ErrorHandler = require("./middleware/error");
 const app = express();
@@ -22,9 +23,6 @@ app.use("/test", (req, res) => {
 
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
-// config
-if (process.env.NODE_ENV !== "PRODUCTION") {
-  require("dotenv").config()
 
 // import routes
 const user = require("./controller/user");
