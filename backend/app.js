@@ -9,7 +9,7 @@ const path = require("path");
 const morgan = require("morgan");
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://64b11de451e4202dd6d1565f--endearing-snickerdoodle-f0ea6e.netlify.app/',
   credentials: true
 }));
 app.use(morgan('dev'))
