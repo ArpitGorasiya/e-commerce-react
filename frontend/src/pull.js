@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const pull = () => {
   return (
     <div>
       This file is for pull.
+      <h1>hello git</h1>
     </div>
-  )
-}
+  );
+};
 
-export default pull
+export default pull;
