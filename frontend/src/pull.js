@@ -5,6 +5,7 @@ const pull = () => {
     <div>
       This file is for pull.
       <h1>hello git</h1>
+      <h2>hello</h2>
     </div>
   );
 };
